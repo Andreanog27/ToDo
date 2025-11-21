@@ -17,18 +17,17 @@
       <th scope="col">titulo</th>
       <th scope="col">descricao</th>
       <th scope="col">prioridade</th>
-      <th scope="col">data_limite</th>
       <th scope="col">criado_em</th>
     </tr>
   </thead>
   <tbody>
+
     {% for task in tarefas %}
     <tr>
         <td>{{ task.id }}</td>
         <td>{{ task.titulo }}</td>
         <td>{{ task.descricao }}</td>
         <td>{{ task.prioridade }}</td>
-        <td>{{ task.data_limite }}</td>
         <td>{{ task.criado_em }}</td>
         <tr>
 
@@ -39,5 +38,4 @@
 </table>
 
         {% endblock %}
-
 
