@@ -6,8 +6,7 @@
 {% block content %}
 
 {% for task in tarefas %}
-{{  task.titulo}}
-{{  task.descrcao}}
+{{ c }}
 {% endfor %}
 
 <table class="table table-striped table-dark">
@@ -18,6 +17,8 @@
       <th scope="col">descricao</th>
       <th scope="col">prioridade</th>
       <th scope="col">criado_em</th>
+      <th scope="col">concluido</th>
+      
     </tr>
   </thead>
   <tbody>
@@ -29,6 +30,9 @@
         <td>{{ task.descricao }}</td>
         <td>{{ task.prioridade }}</td>
         <td>{{ task.criado_em }}</td>
+         <td>{{ task.concluido }}</td>
+        
+        
         <tr>
 
 
